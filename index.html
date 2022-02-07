@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Practice</title>
+</head>
+<body>
+    <div id='progress-container'>
+        <div class='prog' id='progress-bar'></div>
+    </div>
+    <button id='start' >Start</button>
+
+
+    <h1>
+        <div id='empty'></div>
+    </h1>
+    <button id="add">add name</button>
+</body>
+
+<script>
+
+// let progressBar = document.getElementById('progress-bar')
+// let start = document.getElementById('start')
+
+
+// start.addEventListener('click', () => {
+
+//     let count = 0
+
+//     const func = () => {
+//         count++
+//         document.getElementById('progress-bar').style.width = count +'px'
+
+//         if(count===100){
+//             clearInterval(interval)
+//         }
+//     }
+
+
+//     let interval = setInterval(func, 20)
+
+// })
+
+let name = 'sahil'
+let empty = document.getElementById('empty')
+let add = document.getElementById('add')
+add.addEventListener('click', () => {
+    empty.innerText = name
+})
+</script>
+</html>
